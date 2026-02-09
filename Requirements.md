@@ -150,6 +150,8 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 
 **3.3.2.** Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in a future release.
 
+**3.3.3** For clarity, when evaluating the misuse or abuse of code signing certificates, Microsoft and the Microsoft Trusted Root Program rely on the same software classification criteria used across Microsoft security products. These classifications describe how Microsoft identifies and categorizes malware, potentially unwanted applications, tampering software, and related behaviors, and are documented in Microsoft’s Unified Security Operations criteria: <https://learn.microsoft.com/en-us/unified-secops/criteria>. This reference is provided to help Program Participants understand how Microsoft may assess signed code during incident investigation, disclosure, and enforcement activities.
+
 
 ### 3.4. EKU Requirements
 
