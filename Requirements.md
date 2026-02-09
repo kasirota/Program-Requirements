@@ -46,6 +46,7 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 
 **2.1.17.** Certificate Authorities MUST update their Certificate Policy (CP) and Certification Practice Statement (CPS) documents before applying any change in operations. The updated documents must be made publicly available and communicated to Microsoft. CAs should provide these updates by updating the CCADB. CAs MUST update the changelog in their CP/CPS documents with what changes were made. 
 
+**2.1.18** Certificate Authorities MUST publicly disclose and/or respond to incident reports in Bugzilla, including incidents that the Program Participant believes to be low‑impact, procedural, or non‑security‑relevant. Incident reports MUST be submitted in accordance with the current CCADB Incident Report format and applicable disclosure timelines, which can be found here: <https://www.ccadb.org/cas/incident-report>. If a Program Participant has not yet publicly disclosed an incident in Bugzilla, the Participant MUST promptly notify msroot [at] microsoft.com and MUST provide an initial public disclosure timeline.
 
 
 ## 3. Program Technical Requirements
@@ -125,23 +126,28 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 ### 3.2. Revocation Requirements
 
 **3.2.1.** CAs must have a documented revocation policy and must have the ability to revoke any certificate it issues.
+
 **3.2.2.** OCSP responder requirements:
-    a.	Minimum validity of eight (8) hours; Maximum validity of seven (7) days; and
+    a.	Minimum validity of eight (8) hours; Maximum validity of seven (7) days; and  
     b.	The next update must be available at least eight (8) hours before the current period expires. If the validity is more than 16 hours, then the next update must be available at ½ the validity period.
+
 **3.2.3.** CRL recommendations when OCSP is not present:
-    a.	Should contain Microsoft-specific extension 1.3.6.1.4.1.311.21.4 (Next CRL Publish).
-    b.	New CRL should be available at the Next CRL Publish time.
+    a.	Should contain Microsoft-specific extension 1.3.6.1.4.1.311.21.4 (Next CRL Publish)
+    b.	New CRL should be available at the Next CRL Publish time
     c.	Maximum size of the CRL file (either full CRL or partitioned CRL) should not exceed 10M.
     
     > [!Note]
     > The goal of section 3.C.3- CRL Recommendations when OCSP is not present is to provide coverage for end users in cases of mass revocation. 
     
+
 **3.2.4.** The CA must not use the root certificate to issue end-entity certificates.
+
 **3.2.5.** If a CA issues Code Signing certificates, it must use a Time Stamp Authority that complies with RFC 3161, "Internet X.509 Public Key Infrastructure Time-Stamp Protocol (TSP)."
 
 ### 3.3. Code Signing Root Certificate Requirements
 
 **3.3.1.** Root certificates that support code signing use may be removed from distribution by the Program 10 years from the date of distribution of a replacement rollover root certificate or sooner, if requested by the CA. 
+
 **3.3.2.** Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in a future release.
 
 ### 3.4. EKU Requirements
