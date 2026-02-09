@@ -150,6 +150,7 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 
 **3.3.2.** Root certificates that remain in distribution to support only code signing use beyond their algorithm security lifetime (e.g. RSA 1024  = 2014, RSA 2048 = 2030) may be set to 'disable' in a future release.
 
+
 ### 3.4. EKU Requirements
 
 **3.4.1.** CAs must provide a business justification for all of the EKUs assigned to their root certificate. Justification may be in the form of public evidence of a current business of issuing certificates of a type or types, or a business plan demonstrating an intention to issue those certificates in the near term (within one year of root certificate distribution by the Program).
@@ -161,6 +162,8 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
     4.  Time stamping EKU=1.3.6.1.5.5.7.3.8
     5.  Document Signing EKU=1.3.6.1.4.1.311.10.3.12
      -   This EKU is used for signing documents within Office. It isn't required for other document signing uses.
+
+**3.4.3** Effective January 1, 2027, all root certificates submitted to the Microsoft Trusted Root Program MUST assert a single Extended Key Usage (EKU). Each root certificate MUST be dedicated to a single PKI use case. If a Certificate Authority requires support for an additional PKI use case, the CA MUST submit a separate root certificate dedicated to that use case. Root certificates submitted prior to January 1, 2027 that assert multiple EKUs will continue to be trusted unless otherwise directed by Microsoft.
  
 
 # 4. Audit requirements
