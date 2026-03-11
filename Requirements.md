@@ -65,7 +65,7 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 
 **3.1.7.** Root Key Sizes must meet the requirements detailed in "Signature Requirements" below.
 
-**3.1.8.** Newly minted Root CAs must be valid for a minimum of eight years, and a maximum of 25 years, from the date of submission.
+**3.1.8.** Newly minted Root CAs must be valid for a maximum 10 years, from the date of submission, effective July 1, 2026.
 
 **3.1.9.** Participating Root CAs may not issue new 1024-bit RSA certificates from roots covered by these requirements.
 
