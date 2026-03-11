@@ -46,6 +46,8 @@ The Microsoft Trusted Root Program enables customers to trust Windows products b
 
 **2.1.17.** Certificate Authorities MUST update their Certificate Policy (CP) and Certification Practice Statement (CPS) documents before applying any change in operations. The updated documents must be made publicly available and communicated to Microsoft. CAs should provide these updates by updating the CCADB. CAs MUST update the changelog in their CP/CPS documents with what changes were made. 
 
+**2.1.18** Certificate Authorities MUST publicly disclose and/or respond to incident reports in Bugzilla, including incidents that the Program Participant believes to be low‑impact, procedural, or non‑security‑relevant. Incident reports MUST be submitted in accordance with the current CCADB Incident Report format and applicable disclosure timelines, which can be found here: <https://www.ccadb.org/cas/incident-report>. If a Program Participant has not yet publicly disclosed an incident in Bugzilla, the Participant MUST promptly notify msroot [at] microsoft.com and MUST provide an initial public disclosure timeline.
+
 
 
 ## 3. Program Technical Requirements
